@@ -1,0 +1,182 @@
+@charset "utf-8";
+
+/********************************기본적인 초기화********************************/
+
+body,html.ul,ol,li,div,input{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+/**************************************공사중**************************************/
+
+body{
+    background-image: url(./스크린샷\ 2022-08-29\ 오후\ 12.43.27.png);
+}
+
+body *{
+    /* outline: 1px solid red; */
+    color: rgb(232, 232, 232);
+}
+
+
+/*******************************전체틀*******************************/
+
+#layout{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#calculator{
+    width: 300px;
+    box-shadow: 1px 1px 10px black;
+    border-radius: 15px;
+    background-color: rgb(34, 31, 35);
+    opacity: 90%;
+    position: relative;
+    right: 0;
+    /* 드래그효과 */
+    /* overflow: auto;
+    resize: both; */
+}
+
+/*****************************상단역역*****************************/
+
+.hd_button{
+    display: inline-block;
+}
+
+
+.hd_button:hover input{
+    color:black;
+}
+
+.hd_button input{
+    margin: 10px 7px;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    border: none;
+    text-align: center;
+    color: rgba(0, 0, 0, 0);
+    font-size: 20px;
+    line-height: 17px;
+}
+
+.hd_button input:nth-child(1){
+    background-color: rgb(240, 97, 1);
+}
+.hd_button input:nth-child(2){
+    background-color: rgb(245, 185, 59);
+}
+.hd_button input:nth-child(3){
+    background-color: rgb(65, 154, 59);
+}
+
+.hd_screen input{
+    font-size: 50px;
+    text-align: right;
+    word-spacing: 20px;
+    width: 85%;
+    height: 90px;
+    box-sizing: border-box;
+    background-color: rgb(34, 31, 35);
+    border: none;
+    /* 상위부모에게 줄경우 상단버튼도 동시움직여
+    개별적으로 접근 */
+    display: block;
+    margin: 0 auto;
+
+    /* 유저의 클릭 및 드래그 ~ 적용불가 ??  */
+    pointer-events: none;
+    /* -webkit-user-select:none; */
+    /* -moz-user-select:none; */
+    /* -ms-user-select:none; */
+    /* user-select:none */
+
+}
+
+
+/****************************메인 버튼영역****************************/
+
+#container_main input{
+    background-color: rgb(87, 86, 90);
+    font-size: 20px;
+    box-sizing: border-box;
+    /* css로 효과를 주기위한 트랜지션 */
+    transition-duration: 0.3s;
+    cursor: pointer;
+}
+/* css 클릭효과!! */
+#container_main input:active{
+
+    transform: scale(0.9);
+    box-shadow: none;
+    
+}
+
+
+
+#container_main .md_1 input{
+    background-color: rgb(55, 53, 57);
+}
+
+#calculator #container_main div input:last-child{
+    background-color: rgb(244, 156, 40);
+}
+
+.common_flex{
+    display: flex;
+}
+
+.common_flex input{
+    flex: 1;
+    /* border-radius: 5px; 버튼의 기본요소 radius가
+    너무 많이깍아서 준거임 none일경우는 무관
+    */
+    border: none;
+    outline: 1px solid black;
+    padding: 15px 0;
+}
+
+.md_5 input:first-child{
+    flex-grow: 2; 
+    /*1,2버튼에 보더 요소가 두개로
+    2px로 계산되어 맞지않음 */
+    /* 완전하게 맞출시에 단 보더가 있을시에*/
+    /* flex-basis: 79px; */
+    border-radius: 0 0 0 10px;
+}
+
+.md_5 input:last-child{
+    border-radius: 0 0 10px 0;
+}
+
+
+
+
+
+
+
+/****************************************************
+
+    활성화창 임시보류
+ #container_main .md_2 input:nth-child(6)~ input,
+#container_main .md_3 input:nth-child(6)~ input,
+#container_main .md_4 input:nth-child(6)~ input,
+#container_main .md_5 input:nth-child(6)~ input{
+    background-color: rgb(87, 86, 90);
+****************************************************/
+
+
+
+
+
+
+

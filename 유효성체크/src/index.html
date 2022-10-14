@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>유효성 검사</title>
+    <link rel="stylesheet" href="global-style.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="validator.js"></script>
+  </head>
+
+  <body>
+    <main>
+      <img
+        class="logo"
+        src="./images/codestates-logo.png"
+        alt="CODE_STATES_LOGO"
+      />
+      <!--  아아디라인 부모 -->
+      <fieldset>
+        <!--  아이디라인 자식 -->
+        <input type="text" id="username" placeholder="아이디" />
+      </fieldset>
+      <!--   아이디내용에 따라 출력문구 -->
+      <div class="success-message hide">사용할 수 있는 아이디입니다</div>   
+      <div class="failure-message hide">아이디는 네 글자 이상이어야 합니다</div>
+
+
+      <!-- 패스워드라인 부모 -->
+      <fieldset>
+        <!-- 패스워드라인 자식 => 내용   -->
+        <input type="password" id="password" placeholder="비밀번호" />
+      </fieldset>
+
+      <!-- 패스원드 확인라인 부모 -->
+      <fieldset>
+        <!-- 패스워드 확인라인 자식 > 내용 -->
+        <input
+          type="password"
+          id="password-retype"
+          placeholder="비밀번호 확인"
+        />
+      </fieldset>
+
+      <!-- 패스워드내용에따라 출력문구 -->
+      <div class="mismatch-message hide">비밀번호가 일치하지 않습니다</div>
+
+
+      <!-- keyup이벤트 핸들로도 등록이 되있어야한다~~~ -->
+      <fieldset class="signup">
+        <button>회원가입</button>
+      </fieldset>
+
+      <script src="script.js"></script>
+    </main>
+  </body>
+</html>
