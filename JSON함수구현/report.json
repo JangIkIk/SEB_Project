@@ -1,0 +1,598 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 21,
+    "passes": 0,
+    "pending": 0,
+    "failures": 21,
+    "start": "2022-10-21T03:12:12.049Z",
+    "end": "2022-10-21T03:12:12.055Z",
+    "duration": 6
+  },
+  "tests": [
+    {
+      "title": "객체는 문자열 \"9\"로 변환되어야 합니다",
+      "fullTitle": "stringifyJSON는 JSON.stringify 함수를 실행했을 때와 같은 결과를 리턴해야 합니다. 객체는 문자열 \"9\"로 변환되어야 합니다",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected '\\'\\'' to equal '9'",
+        "showDiff": true,
+        "actual": "''",
+        "expected": "9",
+        "operator": "strictEqual",
+        "stack": "AssertionError: expected '\\'\\'' to equal '9'\n    at Context.<anonymous> (spec/stringifyJSONSpec.js:48:25)\n    at processImmediate (node:internal/timers:466:21)"
+      }
+    },
+    {
+      "title": "객체는 문자열 \"null\"로 변환되어야 합니다",
+      "fullTitle": "stringifyJSON는 JSON.stringify 함수를 실행했을 때와 같은 결과를 리턴해야 합니다. 객체는 문자열 \"null\"로 변환되어야 합니다",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "stack": "TypeError: Cannot read properties of null (reading 'length')\n    at stringifyJSON (src/stringifyJSON.js:43:27)\n    at Context.<anonymous> (spec/stringifyJSONSpec.js:47:22)\n    at processImmediate (node:internal/timers:466:21)",
+        "message": "Cannot read properties of null (reading 'length')"
+      }
+    },
+    {
+      "title": "객체는 문자열 \"true\"로 변환되어야 합니다",
+      "fullTitle": "stringifyJSON는 JSON.stringify 함수를 실행했을 때와 같은 결과를 리턴해야 합니다. 객체는 문자열 \"true\"로 변환되어야 합니다",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected '\\'\\'' to equal 'true'",
+        "showDiff": true,
+        "actual": "''",
+        "expected": "true",
+        "operator": "strictEqual",
+        "stack": "AssertionError: expected '\\'\\'' to equal 'true'\n    at Context.<anonymous> (spec/stringifyJSONSpec.js:48:25)\n    at processImmediate (node:internal/timers:466:21)"
+      }
+    },
+    {
+      "title": "객체는 문자열 \"false\"로 변환되어야 합니다",
+      "fullTitle": "stringifyJSON는 JSON.stringify 함수를 실행했을 때와 같은 결과를 리턴해야 합니다. 객체는 문자열 \"false\"로 변환되어야 합니다",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected '\\'\\'' to equal 'false'",
+        "showDiff": true,
+        "actual": "''",
+        "expected": "false",
+        "operator": "strictEqual",
+        "stack": "AssertionError: expected '\\'\\'' to equal 'false'\n    at Context.<anonymous> (spec/stringifyJSONSpec.js:48:25)\n    at processImmediate (node:internal/timers:466:21)"
+      }
+    },
+    {
+      "title": "객체는 문자열 \"\"Hello world\"\"로 변환되어야 합니다",
+      "fullTitle": "stringifyJSON는 JSON.stringify 함수를 실행했을 때와 같은 결과를 리턴해야 합니다. 객체는 문자열 \"\"Hello world\"\"로 변환되어야 합니다",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected '\\'\\'' to equal '\"Hello world\"'",
+        "showDiff": true,
+        "actual": "''",
+        "expected": "\"Hello world\"",
+        "operator": "strictEqual",
+        "stack": "AssertionError: expected '\\'\\'' to equal '\"Hello world\"'\n    at Context.<anonymous> (spec/stringifyJSONSpec.js:48:25)\n    at processImmediate (node:internal/timers:466:21)"
+      }
+    },
+    {
+      "title": "객체는 문자열 \"[]\"로 변환되어야 합니다",
+      "fullTitle": "stringifyJSON는 JSON.stringify 함수를 실행했을 때와 같은 결과를 리턴해야 합니다. 객체는 문자열 \"[]\"로 변환되어야 합니다",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected '\\'\\'' to equal '[]'",
+        "showDiff": true,
+        "actual": "''",
+        "expected": "[]",
+        "operator": "strictEqual",
+        "stack": "AssertionError: expected '\\'\\'' to equal '[]'\n    at Context.<anonymous> (spec/stringifyJSONSpec.js:48:25)\n    at processImmediate (node:internal/timers:466:21)"
+      }
+    },
+    {
+      "title": "객체는 문자열 \"[8]\"로 변환되어야 합니다",
+      "fullTitle": "stringifyJSON는 JSON.stringify 함수를 실행했을 때와 같은 결과를 리턴해야 합니다. 객체는 문자열 \"[8]\"로 변환되어야 합니다",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected '\\'\"8\"\\'' to equal '[8]'",
+        "showDiff": true,
+        "actual": "'\"8\"'",
+        "expected": "[8]",
+        "operator": "strictEqual",
+        "stack": "AssertionError: expected '\\'\"8\"\\'' to equal '[8]'\n    at Context.<anonymous> (spec/stringifyJSONSpec.js:48:25)\n    at processImmediate (node:internal/timers:466:21)"
+      }
+    },
+    {
+      "title": "객체는 문자열 \"[\"hi\"]\"로 변환되어야 합니다",
+      "fullTitle": "stringifyJSON는 JSON.stringify 함수를 실행했을 때와 같은 결과를 리턴해야 합니다. 객체는 문자열 \"[\"hi\"]\"로 변환되어야 합니다",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected '\\'\\'' to equal '[\"hi\"]'",
+        "showDiff": true,
+        "actual": "''",
+        "expected": "[\"hi\"]",
+        "operator": "strictEqual",
+        "stack": "AssertionError: expected '\\'\\'' to equal '[\"hi\"]'\n    at Context.<anonymous> (spec/stringifyJSONSpec.js:48:25)\n    at processImmediate (node:internal/timers:466:21)"
+      }
+    },
+    {
+      "title": "객체는 문자열 \"[8,\"hi\"]\"로 변환되어야 합니다",
+      "fullTitle": "stringifyJSON는 JSON.stringify 함수를 실행했을 때와 같은 결과를 리턴해야 합니다. 객체는 문자열 \"[8,\"hi\"]\"로 변환되어야 합니다",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected '\\'\"8\"\\'' to equal '[8,\"hi\"]'",
+        "showDiff": true,
+        "actual": "'\"8\"'",
+        "expected": "[8,\"hi\"]",
+        "operator": "strictEqual",
+        "stack": "AssertionError: expected '\\'\"8\"\\'' to equal '[8,\"hi\"]'\n    at Context.<anonymous> (spec/stringifyJSONSpec.js:48:25)\n    at processImmediate (node:internal/timers:466:21)"
+      }
+    },
+    {
+      "title": "객체는 문자열 \"[1,0,-1,-0.3,0.3,1343.32,3345,0.00011999]\"로 변환되어야 합니다",
+      "fullTitle": "stringifyJSON는 JSON.stringify 함수를 실행했을 때와 같은 결과를 리턴해야 합니다. 객체는 문자열 \"[1,0,-1,-0.3,0.3,1343.32,3345,0.00011999]\"로 변환되어야 합니다",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected '\\'\"1\",\"0\",\"-1\",\"-0.3\",\"0.3\",\"1343.32\"…' to equal '[1,0,-1,-0.3,0.3,1343.32,3345,0.00011…'",
+        "showDiff": true,
+        "actual": "'\"1\",\"0\",\"-1\",\"-0.3\",\"0.3\",\"1343.32\",\"3345\",\"0.00011999\"'",
+        "expected": "[1,0,-1,-0.3,0.3,1343.32,3345,0.00011999]",
+        "operator": "strictEqual",
+        "stack": "AssertionError: expected '\\'\"1\",\"0\",\"-1\",\"-0.3\",\"0.3\",\"1343.32\"…' to equal '[1,0,-1,-0.3,0.3,1343.32,3345,0.00011…'\n    at Context.<anonymous> (spec/stringifyJSONSpec.js:48:25)\n    at processImmediate (node:internal/timers:466:21)"
+      }
+    },
+    {
+      "title": "객체는 문자열 \"[8,[[],3,4]]\"로 변환되어야 합니다",
+      "fullTitle": "stringifyJSON는 JSON.stringify 함수를 실행했을 때와 같은 결과를 리턴해야 합니다. 객체는 문자열 \"[8,[[],3,4]]\"로 변환되어야 합니다",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected '\\'\"8\"\\'' to equal '[8,[[],3,4]]'",
+        "showDiff": true,
+        "actual": "'\"8\"'",
+        "expected": "[8,[[],3,4]]",
+        "operator": "strictEqual",
+        "stack": "AssertionError: expected '\\'\"8\"\\'' to equal '[8,[[],3,4]]'\n    at Context.<anonymous> (spec/stringifyJSONSpec.js:48:25)\n    at processImmediate (node:internal/timers:466:21)"
+      }
+    },
+    {
+      "title": "객체는 문자열 \"[[[[\"foo\"]]]]\"로 변환되어야 합니다",
+      "fullTitle": "stringifyJSON는 JSON.stringify 함수를 실행했을 때와 같은 결과를 리턴해야 합니다. 객체는 문자열 \"[[[[\"foo\"]]]]\"로 변환되어야 합니다",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected '\\'\\'' to equal '[[[[\"foo\"]]]]'",
+        "showDiff": true,
+        "actual": "''",
+        "expected": "[[[[\"foo\"]]]]",
+        "operator": "strictEqual",
+        "stack": "AssertionError: expected '\\'\\'' to equal '[[[[\"foo\"]]]]'\n    at Context.<anonymous> (spec/stringifyJSONSpec.js:48:25)\n    at processImmediate (node:internal/timers:466:21)"
+      }
+    },
+    {
+      "title": "객체는 문자열 \"{}\"로 변환되어야 합니다",
+      "fullTitle": "stringifyJSON는 JSON.stringify 함수를 실행했을 때와 같은 결과를 리턴해야 합니다. 객체는 문자열 \"{}\"로 변환되어야 합니다",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected '\\'\\'' to equal '{}'",
+        "showDiff": true,
+        "actual": "''",
+        "expected": "{}",
+        "operator": "strictEqual",
+        "stack": "AssertionError: expected '\\'\\'' to equal '{}'\n    at Context.<anonymous> (spec/stringifyJSONSpec.js:48:25)\n    at processImmediate (node:internal/timers:466:21)"
+      }
+    },
+    {
+      "title": "객체는 문자열 \"{\"a\":\"apple\"}\"로 변환되어야 합니다",
+      "fullTitle": "stringifyJSON는 JSON.stringify 함수를 실행했을 때와 같은 결과를 리턴해야 합니다. 객체는 문자열 \"{\"a\":\"apple\"}\"로 변환되어야 합니다",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected '\\'\\'' to equal '{\"a\":\"apple\"}'",
+        "showDiff": true,
+        "actual": "''",
+        "expected": "{\"a\":\"apple\"}",
+        "operator": "strictEqual",
+        "stack": "AssertionError: expected '\\'\\'' to equal '{\"a\":\"apple\"}'\n    at Context.<anonymous> (spec/stringifyJSONSpec.js:48:25)\n    at processImmediate (node:internal/timers:466:21)"
+      }
+    },
+    {
+      "title": "객체는 문자열 \"{\"foo\":true,\"bar\":false,\"baz\":null}\"로 변환되어야 합니다",
+      "fullTitle": "stringifyJSON는 JSON.stringify 함수를 실행했을 때와 같은 결과를 리턴해야 합니다. 객체는 문자열 \"{\"foo\":true,\"bar\":false,\"baz\":null}\"로 변환되어야 합니다",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected '\\'\\'' to equal '{\"foo\":true,\"bar\":false,\"baz\":null}'",
+        "showDiff": true,
+        "actual": "''",
+        "expected": "{\"foo\":true,\"bar\":false,\"baz\":null}",
+        "operator": "strictEqual",
+        "stack": "AssertionError: expected '\\'\\'' to equal '{\"foo\":true,\"bar\":false,\"baz\":null}'\n    at Context.<anonymous> (spec/stringifyJSONSpec.js:48:25)\n    at processImmediate (node:internal/timers:466:21)"
+      }
+    },
+    {
+      "title": "객체는 문자열 \"{\"boolean, true\":true,\"boolean, false\":false,\"null\":null}\"로 변환되어야 합니다",
+      "fullTitle": "stringifyJSON는 JSON.stringify 함수를 실행했을 때와 같은 결과를 리턴해야 합니다. 객체는 문자열 \"{\"boolean, true\":true,\"boolean, false\":false,\"null\":null}\"로 변환되어야 합니다",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected '\\'\\'' to equal '{\"boolean, true\":true,\"boolean, false…'",
+        "showDiff": true,
+        "actual": "''",
+        "expected": "{\"boolean, true\":true,\"boolean, false\":false,\"null\":null}",
+        "operator": "strictEqual",
+        "stack": "AssertionError: expected '\\'\\'' to equal '{\"boolean, true\":true,\"boolean, false…'\n    at Context.<anonymous> (spec/stringifyJSONSpec.js:48:25)\n    at processImmediate (node:internal/timers:466:21)"
+      }
+    },
+    {
+      "title": "객체는 문자열 \"{\"a\":{\"b\":\"c\"}}\"로 변환되어야 합니다",
+      "fullTitle": "stringifyJSON는 JSON.stringify 함수를 실행했을 때와 같은 결과를 리턴해야 합니다. 객체는 문자열 \"{\"a\":{\"b\":\"c\"}}\"로 변환되어야 합니다",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected '\\'\\'' to equal '{\"a\":{\"b\":\"c\"}}'",
+        "showDiff": true,
+        "actual": "''",
+        "expected": "{\"a\":{\"b\":\"c\"}}",
+        "operator": "strictEqual",
+        "stack": "AssertionError: expected '\\'\\'' to equal '{\"a\":{\"b\":\"c\"}}'\n    at Context.<anonymous> (spec/stringifyJSONSpec.js:48:25)\n    at processImmediate (node:internal/timers:466:21)"
+      }
+    },
+    {
+      "title": "객체는 문자열 \"{\"a\":[\"b\",\"c\"]}\"로 변환되어야 합니다",
+      "fullTitle": "stringifyJSON는 JSON.stringify 함수를 실행했을 때와 같은 결과를 리턴해야 합니다. 객체는 문자열 \"{\"a\":[\"b\",\"c\"]}\"로 변환되어야 합니다",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected '\\'\\'' to equal '{\"a\":[\"b\",\"c\"]}'",
+        "showDiff": true,
+        "actual": "''",
+        "expected": "{\"a\":[\"b\",\"c\"]}",
+        "operator": "strictEqual",
+        "stack": "AssertionError: expected '\\'\\'' to equal '{\"a\":[\"b\",\"c\"]}'\n    at Context.<anonymous> (spec/stringifyJSONSpec.js:48:25)\n    at processImmediate (node:internal/timers:466:21)"
+      }
+    },
+    {
+      "title": "객체는 문자열 \"[{\"a\":\"b\"},{\"c\":\"d\"}]\"로 변환되어야 합니다",
+      "fullTitle": "stringifyJSON는 JSON.stringify 함수를 실행했을 때와 같은 결과를 리턴해야 합니다. 객체는 문자열 \"[{\"a\":\"b\"},{\"c\":\"d\"}]\"로 변환되어야 합니다",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected '\\'\\'' to equal '[{\"a\":\"b\"},{\"c\":\"d\"}]'",
+        "showDiff": true,
+        "actual": "''",
+        "expected": "[{\"a\":\"b\"},{\"c\":\"d\"}]",
+        "operator": "strictEqual",
+        "stack": "AssertionError: expected '\\'\\'' to equal '[{\"a\":\"b\"},{\"c\":\"d\"}]'\n    at Context.<anonymous> (spec/stringifyJSONSpec.js:48:25)\n    at processImmediate (node:internal/timers:466:21)"
+      }
+    },
+    {
+      "title": "객체는 문자열 \"{\"a\":[],\"c\":{},\"b\":true}\"로 변환되어야 합니다",
+      "fullTitle": "stringifyJSON는 JSON.stringify 함수를 실행했을 때와 같은 결과를 리턴해야 합니다. 객체는 문자열 \"{\"a\":[],\"c\":{},\"b\":true}\"로 변환되어야 합니다",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected '\\'\\'' to equal '{\"a\":[],\"c\":{},\"b\":true}'",
+        "showDiff": true,
+        "actual": "''",
+        "expected": "{\"a\":[],\"c\":{},\"b\":true}",
+        "operator": "strictEqual",
+        "stack": "AssertionError: expected '\\'\\'' to equal '{\"a\":[],\"c\":{},\"b\":true}'\n    at Context.<anonymous> (spec/stringifyJSONSpec.js:48:25)\n    at processImmediate (node:internal/timers:466:21)"
+      }
+    },
+    {
+      "title": "함수와 undefined는 stringify되지 않습니다.",
+      "fullTitle": "stringifyJSON는 JSON.stringify 함수를 실행했을 때와 같은 결과를 리턴해야 합니다. 함수와 undefined는 stringify되지 않습니다.",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected '\\'\\'' to equal '{}'",
+        "showDiff": true,
+        "actual": "''",
+        "expected": "{}",
+        "operator": "strictEqual",
+        "stack": "AssertionError: expected '\\'\\'' to equal '{}'\n    at Context.<anonymous> (spec/stringifyJSONSpec.js:56:23)\n    at processImmediate (node:internal/timers:466:21)"
+      }
+    }
+  ],
+  "pending": [],
+  "failures": [
+    {
+      "title": "객체는 문자열 \"9\"로 변환되어야 합니다",
+      "fullTitle": "stringifyJSON는 JSON.stringify 함수를 실행했을 때와 같은 결과를 리턴해야 합니다. 객체는 문자열 \"9\"로 변환되어야 합니다",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected '\\'\\'' to equal '9'",
+        "showDiff": true,
+        "actual": "''",
+        "expected": "9",
+        "operator": "strictEqual",
+        "stack": "AssertionError: expected '\\'\\'' to equal '9'\n    at Context.<anonymous> (spec/stringifyJSONSpec.js:48:25)\n    at processImmediate (node:internal/timers:466:21)"
+      }
+    },
+    {
+      "title": "객체는 문자열 \"null\"로 변환되어야 합니다",
+      "fullTitle": "stringifyJSON는 JSON.stringify 함수를 실행했을 때와 같은 결과를 리턴해야 합니다. 객체는 문자열 \"null\"로 변환되어야 합니다",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "stack": "TypeError: Cannot read properties of null (reading 'length')\n    at stringifyJSON (src/stringifyJSON.js:43:27)\n    at Context.<anonymous> (spec/stringifyJSONSpec.js:47:22)\n    at processImmediate (node:internal/timers:466:21)",
+        "message": "Cannot read properties of null (reading 'length')"
+      }
+    },
+    {
+      "title": "객체는 문자열 \"true\"로 변환되어야 합니다",
+      "fullTitle": "stringifyJSON는 JSON.stringify 함수를 실행했을 때와 같은 결과를 리턴해야 합니다. 객체는 문자열 \"true\"로 변환되어야 합니다",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected '\\'\\'' to equal 'true'",
+        "showDiff": true,
+        "actual": "''",
+        "expected": "true",
+        "operator": "strictEqual",
+        "stack": "AssertionError: expected '\\'\\'' to equal 'true'\n    at Context.<anonymous> (spec/stringifyJSONSpec.js:48:25)\n    at processImmediate (node:internal/timers:466:21)"
+      }
+    },
+    {
+      "title": "객체는 문자열 \"false\"로 변환되어야 합니다",
+      "fullTitle": "stringifyJSON는 JSON.stringify 함수를 실행했을 때와 같은 결과를 리턴해야 합니다. 객체는 문자열 \"false\"로 변환되어야 합니다",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected '\\'\\'' to equal 'false'",
+        "showDiff": true,
+        "actual": "''",
+        "expected": "false",
+        "operator": "strictEqual",
+        "stack": "AssertionError: expected '\\'\\'' to equal 'false'\n    at Context.<anonymous> (spec/stringifyJSONSpec.js:48:25)\n    at processImmediate (node:internal/timers:466:21)"
+      }
+    },
+    {
+      "title": "객체는 문자열 \"\"Hello world\"\"로 변환되어야 합니다",
+      "fullTitle": "stringifyJSON는 JSON.stringify 함수를 실행했을 때와 같은 결과를 리턴해야 합니다. 객체는 문자열 \"\"Hello world\"\"로 변환되어야 합니다",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected '\\'\\'' to equal '\"Hello world\"'",
+        "showDiff": true,
+        "actual": "''",
+        "expected": "\"Hello world\"",
+        "operator": "strictEqual",
+        "stack": "AssertionError: expected '\\'\\'' to equal '\"Hello world\"'\n    at Context.<anonymous> (spec/stringifyJSONSpec.js:48:25)\n    at processImmediate (node:internal/timers:466:21)"
+      }
+    },
+    {
+      "title": "객체는 문자열 \"[]\"로 변환되어야 합니다",
+      "fullTitle": "stringifyJSON는 JSON.stringify 함수를 실행했을 때와 같은 결과를 리턴해야 합니다. 객체는 문자열 \"[]\"로 변환되어야 합니다",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected '\\'\\'' to equal '[]'",
+        "showDiff": true,
+        "actual": "''",
+        "expected": "[]",
+        "operator": "strictEqual",
+        "stack": "AssertionError: expected '\\'\\'' to equal '[]'\n    at Context.<anonymous> (spec/stringifyJSONSpec.js:48:25)\n    at processImmediate (node:internal/timers:466:21)"
+      }
+    },
+    {
+      "title": "객체는 문자열 \"[8]\"로 변환되어야 합니다",
+      "fullTitle": "stringifyJSON는 JSON.stringify 함수를 실행했을 때와 같은 결과를 리턴해야 합니다. 객체는 문자열 \"[8]\"로 변환되어야 합니다",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected '\\'\"8\"\\'' to equal '[8]'",
+        "showDiff": true,
+        "actual": "'\"8\"'",
+        "expected": "[8]",
+        "operator": "strictEqual",
+        "stack": "AssertionError: expected '\\'\"8\"\\'' to equal '[8]'\n    at Context.<anonymous> (spec/stringifyJSONSpec.js:48:25)\n    at processImmediate (node:internal/timers:466:21)"
+      }
+    },
+    {
+      "title": "객체는 문자열 \"[\"hi\"]\"로 변환되어야 합니다",
+      "fullTitle": "stringifyJSON는 JSON.stringify 함수를 실행했을 때와 같은 결과를 리턴해야 합니다. 객체는 문자열 \"[\"hi\"]\"로 변환되어야 합니다",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected '\\'\\'' to equal '[\"hi\"]'",
+        "showDiff": true,
+        "actual": "''",
+        "expected": "[\"hi\"]",
+        "operator": "strictEqual",
+        "stack": "AssertionError: expected '\\'\\'' to equal '[\"hi\"]'\n    at Context.<anonymous> (spec/stringifyJSONSpec.js:48:25)\n    at processImmediate (node:internal/timers:466:21)"
+      }
+    },
+    {
+      "title": "객체는 문자열 \"[8,\"hi\"]\"로 변환되어야 합니다",
+      "fullTitle": "stringifyJSON는 JSON.stringify 함수를 실행했을 때와 같은 결과를 리턴해야 합니다. 객체는 문자열 \"[8,\"hi\"]\"로 변환되어야 합니다",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected '\\'\"8\"\\'' to equal '[8,\"hi\"]'",
+        "showDiff": true,
+        "actual": "'\"8\"'",
+        "expected": "[8,\"hi\"]",
+        "operator": "strictEqual",
+        "stack": "AssertionError: expected '\\'\"8\"\\'' to equal '[8,\"hi\"]'\n    at Context.<anonymous> (spec/stringifyJSONSpec.js:48:25)\n    at processImmediate (node:internal/timers:466:21)"
+      }
+    },
+    {
+      "title": "객체는 문자열 \"[1,0,-1,-0.3,0.3,1343.32,3345,0.00011999]\"로 변환되어야 합니다",
+      "fullTitle": "stringifyJSON는 JSON.stringify 함수를 실행했을 때와 같은 결과를 리턴해야 합니다. 객체는 문자열 \"[1,0,-1,-0.3,0.3,1343.32,3345,0.00011999]\"로 변환되어야 합니다",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected '\\'\"1\",\"0\",\"-1\",\"-0.3\",\"0.3\",\"1343.32\"…' to equal '[1,0,-1,-0.3,0.3,1343.32,3345,0.00011…'",
+        "showDiff": true,
+        "actual": "'\"1\",\"0\",\"-1\",\"-0.3\",\"0.3\",\"1343.32\",\"3345\",\"0.00011999\"'",
+        "expected": "[1,0,-1,-0.3,0.3,1343.32,3345,0.00011999]",
+        "operator": "strictEqual",
+        "stack": "AssertionError: expected '\\'\"1\",\"0\",\"-1\",\"-0.3\",\"0.3\",\"1343.32\"…' to equal '[1,0,-1,-0.3,0.3,1343.32,3345,0.00011…'\n    at Context.<anonymous> (spec/stringifyJSONSpec.js:48:25)\n    at processImmediate (node:internal/timers:466:21)"
+      }
+    },
+    {
+      "title": "객체는 문자열 \"[8,[[],3,4]]\"로 변환되어야 합니다",
+      "fullTitle": "stringifyJSON는 JSON.stringify 함수를 실행했을 때와 같은 결과를 리턴해야 합니다. 객체는 문자열 \"[8,[[],3,4]]\"로 변환되어야 합니다",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected '\\'\"8\"\\'' to equal '[8,[[],3,4]]'",
+        "showDiff": true,
+        "actual": "'\"8\"'",
+        "expected": "[8,[[],3,4]]",
+        "operator": "strictEqual",
+        "stack": "AssertionError: expected '\\'\"8\"\\'' to equal '[8,[[],3,4]]'\n    at Context.<anonymous> (spec/stringifyJSONSpec.js:48:25)\n    at processImmediate (node:internal/timers:466:21)"
+      }
+    },
+    {
+      "title": "객체는 문자열 \"[[[[\"foo\"]]]]\"로 변환되어야 합니다",
+      "fullTitle": "stringifyJSON는 JSON.stringify 함수를 실행했을 때와 같은 결과를 리턴해야 합니다. 객체는 문자열 \"[[[[\"foo\"]]]]\"로 변환되어야 합니다",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected '\\'\\'' to equal '[[[[\"foo\"]]]]'",
+        "showDiff": true,
+        "actual": "''",
+        "expected": "[[[[\"foo\"]]]]",
+        "operator": "strictEqual",
+        "stack": "AssertionError: expected '\\'\\'' to equal '[[[[\"foo\"]]]]'\n    at Context.<anonymous> (spec/stringifyJSONSpec.js:48:25)\n    at processImmediate (node:internal/timers:466:21)"
+      }
+    },
+    {
+      "title": "객체는 문자열 \"{}\"로 변환되어야 합니다",
+      "fullTitle": "stringifyJSON는 JSON.stringify 함수를 실행했을 때와 같은 결과를 리턴해야 합니다. 객체는 문자열 \"{}\"로 변환되어야 합니다",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected '\\'\\'' to equal '{}'",
+        "showDiff": true,
+        "actual": "''",
+        "expected": "{}",
+        "operator": "strictEqual",
+        "stack": "AssertionError: expected '\\'\\'' to equal '{}'\n    at Context.<anonymous> (spec/stringifyJSONSpec.js:48:25)\n    at processImmediate (node:internal/timers:466:21)"
+      }
+    },
+    {
+      "title": "객체는 문자열 \"{\"a\":\"apple\"}\"로 변환되어야 합니다",
+      "fullTitle": "stringifyJSON는 JSON.stringify 함수를 실행했을 때와 같은 결과를 리턴해야 합니다. 객체는 문자열 \"{\"a\":\"apple\"}\"로 변환되어야 합니다",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected '\\'\\'' to equal '{\"a\":\"apple\"}'",
+        "showDiff": true,
+        "actual": "''",
+        "expected": "{\"a\":\"apple\"}",
+        "operator": "strictEqual",
+        "stack": "AssertionError: expected '\\'\\'' to equal '{\"a\":\"apple\"}'\n    at Context.<anonymous> (spec/stringifyJSONSpec.js:48:25)\n    at processImmediate (node:internal/timers:466:21)"
+      }
+    },
+    {
+      "title": "객체는 문자열 \"{\"foo\":true,\"bar\":false,\"baz\":null}\"로 변환되어야 합니다",
+      "fullTitle": "stringifyJSON는 JSON.stringify 함수를 실행했을 때와 같은 결과를 리턴해야 합니다. 객체는 문자열 \"{\"foo\":true,\"bar\":false,\"baz\":null}\"로 변환되어야 합니다",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected '\\'\\'' to equal '{\"foo\":true,\"bar\":false,\"baz\":null}'",
+        "showDiff": true,
+        "actual": "''",
+        "expected": "{\"foo\":true,\"bar\":false,\"baz\":null}",
+        "operator": "strictEqual",
+        "stack": "AssertionError: expected '\\'\\'' to equal '{\"foo\":true,\"bar\":false,\"baz\":null}'\n    at Context.<anonymous> (spec/stringifyJSONSpec.js:48:25)\n    at processImmediate (node:internal/timers:466:21)"
+      }
+    },
+    {
+      "title": "객체는 문자열 \"{\"boolean, true\":true,\"boolean, false\":false,\"null\":null}\"로 변환되어야 합니다",
+      "fullTitle": "stringifyJSON는 JSON.stringify 함수를 실행했을 때와 같은 결과를 리턴해야 합니다. 객체는 문자열 \"{\"boolean, true\":true,\"boolean, false\":false,\"null\":null}\"로 변환되어야 합니다",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected '\\'\\'' to equal '{\"boolean, true\":true,\"boolean, false…'",
+        "showDiff": true,
+        "actual": "''",
+        "expected": "{\"boolean, true\":true,\"boolean, false\":false,\"null\":null}",
+        "operator": "strictEqual",
+        "stack": "AssertionError: expected '\\'\\'' to equal '{\"boolean, true\":true,\"boolean, false…'\n    at Context.<anonymous> (spec/stringifyJSONSpec.js:48:25)\n    at processImmediate (node:internal/timers:466:21)"
+      }
+    },
+    {
+      "title": "객체는 문자열 \"{\"a\":{\"b\":\"c\"}}\"로 변환되어야 합니다",
+      "fullTitle": "stringifyJSON는 JSON.stringify 함수를 실행했을 때와 같은 결과를 리턴해야 합니다. 객체는 문자열 \"{\"a\":{\"b\":\"c\"}}\"로 변환되어야 합니다",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected '\\'\\'' to equal '{\"a\":{\"b\":\"c\"}}'",
+        "showDiff": true,
+        "actual": "''",
+        "expected": "{\"a\":{\"b\":\"c\"}}",
+        "operator": "strictEqual",
+        "stack": "AssertionError: expected '\\'\\'' to equal '{\"a\":{\"b\":\"c\"}}'\n    at Context.<anonymous> (spec/stringifyJSONSpec.js:48:25)\n    at processImmediate (node:internal/timers:466:21)"
+      }
+    },
+    {
+      "title": "객체는 문자열 \"{\"a\":[\"b\",\"c\"]}\"로 변환되어야 합니다",
+      "fullTitle": "stringifyJSON는 JSON.stringify 함수를 실행했을 때와 같은 결과를 리턴해야 합니다. 객체는 문자열 \"{\"a\":[\"b\",\"c\"]}\"로 변환되어야 합니다",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected '\\'\\'' to equal '{\"a\":[\"b\",\"c\"]}'",
+        "showDiff": true,
+        "actual": "''",
+        "expected": "{\"a\":[\"b\",\"c\"]}",
+        "operator": "strictEqual",
+        "stack": "AssertionError: expected '\\'\\'' to equal '{\"a\":[\"b\",\"c\"]}'\n    at Context.<anonymous> (spec/stringifyJSONSpec.js:48:25)\n    at processImmediate (node:internal/timers:466:21)"
+      }
+    },
+    {
+      "title": "객체는 문자열 \"[{\"a\":\"b\"},{\"c\":\"d\"}]\"로 변환되어야 합니다",
+      "fullTitle": "stringifyJSON는 JSON.stringify 함수를 실행했을 때와 같은 결과를 리턴해야 합니다. 객체는 문자열 \"[{\"a\":\"b\"},{\"c\":\"d\"}]\"로 변환되어야 합니다",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected '\\'\\'' to equal '[{\"a\":\"b\"},{\"c\":\"d\"}]'",
+        "showDiff": true,
+        "actual": "''",
+        "expected": "[{\"a\":\"b\"},{\"c\":\"d\"}]",
+        "operator": "strictEqual",
+        "stack": "AssertionError: expected '\\'\\'' to equal '[{\"a\":\"b\"},{\"c\":\"d\"}]'\n    at Context.<anonymous> (spec/stringifyJSONSpec.js:48:25)\n    at processImmediate (node:internal/timers:466:21)"
+      }
+    },
+    {
+      "title": "객체는 문자열 \"{\"a\":[],\"c\":{},\"b\":true}\"로 변환되어야 합니다",
+      "fullTitle": "stringifyJSON는 JSON.stringify 함수를 실행했을 때와 같은 결과를 리턴해야 합니다. 객체는 문자열 \"{\"a\":[],\"c\":{},\"b\":true}\"로 변환되어야 합니다",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected '\\'\\'' to equal '{\"a\":[],\"c\":{},\"b\":true}'",
+        "showDiff": true,
+        "actual": "''",
+        "expected": "{\"a\":[],\"c\":{},\"b\":true}",
+        "operator": "strictEqual",
+        "stack": "AssertionError: expected '\\'\\'' to equal '{\"a\":[],\"c\":{},\"b\":true}'\n    at Context.<anonymous> (spec/stringifyJSONSpec.js:48:25)\n    at processImmediate (node:internal/timers:466:21)"
+      }
+    },
+    {
+      "title": "함수와 undefined는 stringify되지 않습니다.",
+      "fullTitle": "stringifyJSON는 JSON.stringify 함수를 실행했을 때와 같은 결과를 리턴해야 합니다. 함수와 undefined는 stringify되지 않습니다.",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected '\\'\\'' to equal '{}'",
+        "showDiff": true,
+        "actual": "''",
+        "expected": "{}",
+        "operator": "strictEqual",
+        "stack": "AssertionError: expected '\\'\\'' to equal '{}'\n    at Context.<anonymous> (spec/stringifyJSONSpec.js:56:23)\n    at processImmediate (node:internal/timers:466:21)"
+      }
+    }
+  ],
+  "passes": []
+}
