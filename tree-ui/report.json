@@ -1,0 +1,144 @@
+{
+  "stats": {
+    "suites": 2,
+    "tests": 9,
+    "passes": 9,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-10-21T06:50:26.417Z",
+    "end": "2022-10-21T06:50:26.423Z",
+    "duration": 6
+  },
+  "tests": [
+    {
+      "title": "ul#root 엘리먼트가 존재해야 합니다",
+      "fullTitle": "<ul id=\"root\"> 안에 tree view를 구성합니다 ul#root 엘리먼트가 존재해야 합니다",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "ul#root 엘리먼트 안에 tree view를 구현해야 합니다",
+      "fullTitle": "<ul id=\"root\"> 안에 tree view를 구성합니다 ul#root 엘리먼트 안에 tree view를 구현해야 합니다",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "ul#root 엘리먼트 안에 카테고리(음료, 음식, 굿즈, 카드)를 렌더링할 4개의 li 엘리먼트가 있어야 합니다",
+      "fullTitle": "menu 데이터를 사용해 tree view를 구성합니다 ul#root 엘리먼트 안에 카테고리(음료, 음식, 굿즈, 카드)를 렌더링할 4개의 li 엘리먼트가 있어야 합니다",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "카테고리(음료, 음식, 굿즈, 카드) 엘리먼트 안에는 각각 자식 노드를 보여주고 감춰줄 checkbox가 존재해야 합니다",
+      "fullTitle": "menu 데이터를 사용해 tree view를 구성합니다 카테고리(음료, 음식, 굿즈, 카드) 엘리먼트 안에는 각각 자식 노드를 보여주고 감춰줄 checkbox가 존재해야 합니다",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "음료, 음식, 굿즈, 카드 카테고리 이름(name)을 span 태그로 감싸야 합니다",
+      "fullTitle": "menu 데이터를 사용해 tree view를 구성합니다 음료, 음식, 굿즈, 카드 카테고리 이름(name)을 span 태그로 감싸야 합니다",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "자식 노드가 없는 데이터의 경우, li 엘리먼트 안에 단순히 이름(name)만 표시합니다. (checkbox 및 span, ul을 포함하면 안됩니다)",
+      "fullTitle": "menu 데이터를 사용해 tree view를 구성합니다 자식 노드가 없는 데이터의 경우, li 엘리먼트 안에 단순히 이름(name)만 표시합니다. (checkbox 및 span, ul을 포함하면 안됩니다)",
+      "duration": 2,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "자식 노드가 있는 데이터의 경우, li 엘리먼트 아래에 자식 노드를 렌더링할 새로운 ul이 존재해야 합니다 (1)",
+      "fullTitle": "menu 데이터를 사용해 tree view를 구성합니다 자식 노드가 있는 데이터의 경우, li 엘리먼트 아래에 자식 노드를 렌더링할 새로운 ul이 존재해야 합니다 (1)",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "자식 노드가 있는 데이터의 경우, li 엘리먼트 아래에 자식 노드를 렌더링할 새로운 ul이 존재해야 합니다 (2)",
+      "fullTitle": "menu 데이터를 사용해 tree view를 구성합니다 자식 노드가 있는 데이터의 경우, li 엘리먼트 아래에 자식 노드를 렌더링할 새로운 ul이 존재해야 합니다 (2)",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "type 속성이 item인 객체는 li 태그로 name 속성값을 감싸주어야 합니다",
+      "fullTitle": "menu 데이터를 사용해 tree view를 구성합니다 type 속성이 item인 객체는 li 태그로 name 속성값을 감싸주어야 합니다",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    }
+  ],
+  "pending": [],
+  "failures": [],
+  "passes": [
+    {
+      "title": "ul#root 엘리먼트가 존재해야 합니다",
+      "fullTitle": "<ul id=\"root\"> 안에 tree view를 구성합니다 ul#root 엘리먼트가 존재해야 합니다",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "ul#root 엘리먼트 안에 tree view를 구현해야 합니다",
+      "fullTitle": "<ul id=\"root\"> 안에 tree view를 구성합니다 ul#root 엘리먼트 안에 tree view를 구현해야 합니다",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "ul#root 엘리먼트 안에 카테고리(음료, 음식, 굿즈, 카드)를 렌더링할 4개의 li 엘리먼트가 있어야 합니다",
+      "fullTitle": "menu 데이터를 사용해 tree view를 구성합니다 ul#root 엘리먼트 안에 카테고리(음료, 음식, 굿즈, 카드)를 렌더링할 4개의 li 엘리먼트가 있어야 합니다",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "카테고리(음료, 음식, 굿즈, 카드) 엘리먼트 안에는 각각 자식 노드를 보여주고 감춰줄 checkbox가 존재해야 합니다",
+      "fullTitle": "menu 데이터를 사용해 tree view를 구성합니다 카테고리(음료, 음식, 굿즈, 카드) 엘리먼트 안에는 각각 자식 노드를 보여주고 감춰줄 checkbox가 존재해야 합니다",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "음료, 음식, 굿즈, 카드 카테고리 이름(name)을 span 태그로 감싸야 합니다",
+      "fullTitle": "menu 데이터를 사용해 tree view를 구성합니다 음료, 음식, 굿즈, 카드 카테고리 이름(name)을 span 태그로 감싸야 합니다",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "자식 노드가 없는 데이터의 경우, li 엘리먼트 안에 단순히 이름(name)만 표시합니다. (checkbox 및 span, ul을 포함하면 안됩니다)",
+      "fullTitle": "menu 데이터를 사용해 tree view를 구성합니다 자식 노드가 없는 데이터의 경우, li 엘리먼트 안에 단순히 이름(name)만 표시합니다. (checkbox 및 span, ul을 포함하면 안됩니다)",
+      "duration": 2,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "자식 노드가 있는 데이터의 경우, li 엘리먼트 아래에 자식 노드를 렌더링할 새로운 ul이 존재해야 합니다 (1)",
+      "fullTitle": "menu 데이터를 사용해 tree view를 구성합니다 자식 노드가 있는 데이터의 경우, li 엘리먼트 아래에 자식 노드를 렌더링할 새로운 ul이 존재해야 합니다 (1)",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "자식 노드가 있는 데이터의 경우, li 엘리먼트 아래에 자식 노드를 렌더링할 새로운 ul이 존재해야 합니다 (2)",
+      "fullTitle": "menu 데이터를 사용해 tree view를 구성합니다 자식 노드가 있는 데이터의 경우, li 엘리먼트 아래에 자식 노드를 렌더링할 새로운 ul이 존재해야 합니다 (2)",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "type 속성이 item인 객체는 li 태그로 name 속성값을 감싸주어야 합니다",
+      "fullTitle": "menu 데이터를 사용해 tree view를 구성합니다 type 속성이 item인 객체는 li 태그로 name 속성값을 감싸주어야 합니다",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    }
+  ]
+}
