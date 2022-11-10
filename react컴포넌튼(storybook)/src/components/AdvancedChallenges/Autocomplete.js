@@ -1,8 +1,6 @@
 import { useState, useEffect } from 'react';
 import styled from 'styled-components';
 
-
-// 추천검색을 띄어줄 데이터
 const deselectedOptions = [
   'rustic',
   'antique',
@@ -16,12 +14,10 @@ const deselectedOptions = [
   '골동품'
 ];
 
-//  스타일 컴포넌트에 넣어주기위한 css변수
 const boxShadow = '0 4px 6px rgb(32 33 36 / 28%)';
 const activeBorderRadius = '1rem 1rem 0 0';
 const inactiveBorderRadius = '1rem 1rem 1rem 1rem';
 
-// div 컴포넌트
 export const InputContainer = styled.div`
   margin-top: 8rem;
   background-color: #ffffff;
@@ -53,7 +49,6 @@ export const InputContainer = styled.div`
   }
 `;
 
-// ul컴포넌트
 export const DropDownContainer = styled.ul`
   background-color: #ffffff;
   display: block;
@@ -85,28 +80,20 @@ export const DropDownContainer = styled.ul`
   }
 `;
 
-// Autocomplete => 화면에 보여질~
 export const Autocomplete = () => {
-
   const [hasText, setHasText] = useState(false);
   const [inputValue, setInputValue] = useState('');
   const [options, setOptions] = useState(deselectedOptions);
   const [selected, setSelected] = useState(-1);
 
-  // inputValue의 값이 변화할때마다 useEffect를 실행한다(중속성)
-  // 만약 inputValue의 값이 빈문자열이라면 hasText의 값을 false로 @@@@@@@@@???
   useEffect(() => {
     if (inputValue === '') {
       setHasText(false);
     }
   }, [inputValue]);
 
-
-  
   const handleInputChange = (event) => {
     const { value } = event.target;
-    
-    // 역슬래쉬를 쓸수 없게 금지
     if (value.includes('\\')) return;
 
     // input에 텍스트가 있는지 없는지 확인하는 코드

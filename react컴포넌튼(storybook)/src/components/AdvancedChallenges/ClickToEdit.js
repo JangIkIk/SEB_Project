@@ -39,24 +39,17 @@ export const MyInput = ({ value, handleValueChange }) => {
     }
   }, [isEditMode]);
 
-  useEffect(() => {
-    setNewValue(value);
-  }, [value]);
-
   const handleClick = () => {
-    // TODO : isEditMode 상태를 변경합니다.
-    setEditMode(true);
+    setEditMode(!isEditMode);
   };
 
   const handleBlur = () => {
-    // TODO : Edit가 불가능한 상태로 변경합니다.
-    handleValueChange(newValue);
     setEditMode(false);
+    handleValueChange(newValue);
   };
 
   const handleInputChange = (e) => {
-    // TODO : 저장된 value를 업데이트합니다.
-    setNewValue(e.target.value)
+    setNewValue(e.target.value);
   };
 
   return (
@@ -68,18 +61,13 @@ export const MyInput = ({ value, handleValueChange }) => {
           ref={inputEl}
           onBlur={handleBlur}
           onChange={handleInputChange}
-          // TODO : 포커스를 잃으면 Edit가 불가능한 상태로 변경되는 메소드가 실행되어야 합니다.
-          // TODO : 변경 사항이 감지되면 저장된 value를 업데이트 되는 메소드가 실행되어야 합니다.
         />
       ) : (
-        <span 
-        onClick={handleClick}
-        // TODO : 클릭하면 Edit가 가능한 상태로 변경되어야 합니다.
-        >{newValue}</span>
+        <span onClick={handleClick}>{newValue}</span>
       )}
     </InputBox>
   );
-}
+};
 
 const cache = {
   name: '김코딩',
